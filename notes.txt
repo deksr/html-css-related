@@ -6,6 +6,8 @@ Notes:
 
 003-animate: used a css library called animate.css to create animation
 
+004-svg-anim: blinking and moving sag animation
+
 005-css-clip-mask: created clip masks on images
 
 006-css-stuff: responsive layouts, media queries
