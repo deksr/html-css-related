@@ -1,1 +1,10 @@
 Notes:
+
+001-responsive: created a responsive layout with html css and media queries.
+
+002-animation: 
+
+003-animate: used a css library called animate.css to create animation
+
+
+
