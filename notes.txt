@@ -2,9 +2,22 @@ Notes:
 
 001-responsive: created a responsive layout with html css and media queries.
 
-002-animation: 
+002-animation: an animation-webkit transform that swings an image
 
 003-animate: used a css library called animate.css to create animation
+
+005-css-clip-mask: created clip masks on images
+
+006-css-stuff: responsive layouts, media queries
+
+007-html5new: some new tags in html5
+
+008-you-did-a-god-job: have used a css/js library for layout
+
+009-boots: bootstrap related
+
+
+
 
 
 
