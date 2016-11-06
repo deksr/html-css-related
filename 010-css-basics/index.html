@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<style>
+
+	body {
+    font-family: "Lucida Grande";
+  }
+
+
+  span.color-class{
+	  color: pink;
+  }
+
+
+  a[href="#about"] {
+   color: green;
+  }
+
+
+  .first-div > p {
+   color: grey;
+  }
+
+
+  .second-div + .third-div{
+  	color: red;
+  }
+
+
+  .fourth-div ~ p{
+  	color: teal;
+
+  }
+
+
+	</style>
+</head>
+<body>
+
+
+    <p>This is a paragraph with <span class="color-class">span</span> the paragraph </p>
+    <p>This is a paragraph with <span class="color-class">span</span> the paragraph</p>
+    <p>This is a paragraph with <span class="some-class">span</span> the paragraph</p> <br> <br> 
+
+
+    <a href="#about"> About </a> <br>
+    <a href="home"> Home </a><br> <br>
+
+
+
+		<h3>css combinators:</h3>
+
+		<h4>Child Selector:</h4>
+    <div class="first-div">
+    	<p class="some-para"> This is some para and it has a <span> span inside </span>. How cool.</p>
+    </div> <br> <br>
+
+
+    <h4>Adjacent Sibling Selector:</h4>
+    <div class="second-div">
+    	<p class="some-para"> This is some para and it has a <span> span inside </span>. How cool.</p>
+    </div>
+
+    <div class="third-div">
+    	<p class="some-para"> This is some para and it has a <span> span inside </span>. How cool.</p>
+    </div> <br> <br>
+
+
+    <h4>General Sibling Selector:</h4>
+    <div class="fourth-div">
+    <p>Paragraph 1 in the div.</p> 
+    </div>
+
+    <p>Paragraph a.</p> 
+    <p>Paragraph b</p> <br> <br>
+
+
+Pseudo-classes
+Pseudo-classes (along with pseudo-elements) let you style elements not just based upon their class, type, id or position in the document, but also their state. For example, whether an <input type="checkbox"> is checked or not.
+
+Some common pseudo-classes are :active, :disabled, :empty, :first-child, :nth-child, :nth-of-type, :focus, :hover, and many more!
+
+We can also chain pseudo-classes for extra good fun time! li:nth-child(3):hoverPseudo-classes
+
+
+</body>
+</html>
