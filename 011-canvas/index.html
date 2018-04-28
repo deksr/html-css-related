@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+<body>
+
+	<canvas id="canvasOne"></canvas>
+
+	<canvas id="canvasTwo"></canvas>
+
+	<canvas id="canvasThree"></canvas>
+
+
+
+
+
+
+<script>
+  // **************drawScreenOne************
+
+ var theCanvas = document.getElementById("canvasOne");
+ var context = theCanvas.getContext("2d");
+
+ 
+
+  function drawScreenOne(){
+ 	  context.fillStyle = "yellow";
+    context.fillRect(0, 0, 800, 600);//x,y.width,height
+
+
+  // context.fillStyle = "#000000";
+  // context.font = "20px Sans-Serif";
+  // context.textBaseline = "center";
+  // context.fillText ("canvas!", 155, 110 );
+
+  // **************************
+  // context.fillStyle = 'red';
+  // context.fillRect(10,10,40,40);
+
+  // context.strokeStyle = 'green';
+  // context.lineWidth = 9;
+  // context.strokeRect(0, 0,20,20);
+
+  // context.clearRect(20,20,2,2);
+
+  // **************************
+
+
+	  context.fillStyle = "black";
+	  context.fillRect(5, 5, 150, 150);
+
+	 	context.save();//calling the restored blue circle
+
+
+
+	 // to clip something:
+	  context.beginPath();
+	  context.rect(0, 0, 50, 50);//creating a simple rect
+	  context.clip();
+	 
+
+
+	 //red circle
+	  context.beginPath();
+	  context.strokeStyle = "red";
+	  context.lineWidth = 5;
+	  context.arc(100, 100, 100, (Math.PI/180)*0, (Math.PI/180)*360, false);
+	  context.stroke();
+	  context.closePath();
+	  
+
+	  //draw a blue line that is not clipped
+	  context.restore();//storing 
+	  context.beginPath();
+	  context.strokeStyle = "blue";
+	  context.lineWidth = 5;
+	  context.arc(100, 100, 50, (Math.PI/180)*0, (Math.PI/180)*360, false);
+	  context.stroke();
+	  context.closePath();
+  }
+
+  drawScreenOne();
+
+
+
+ // **************drawScreenTwo************
+
+ var theCanvasTwo = document.getElementById("canvasTwo");
+ var contextTwo = theCanvasTwo.getContext("2d");
+
+
+  function drawScreenTwo(){
+
+  	// contextTwo.fillStyle = "yellow";
+   //  contextTwo.fillRect(0, 0, 800, 600);//x,y.width,height
+
+
+
+		contextTwo.fillStyle = "red";
+		contextTwo.fillRect(20, 20, 75, 50);
+		contextTwo.globalCompositeOperation = "destination-over";
+		contextTwo.fillStyle = "blue";
+		contextTwo.fillRect(50, 50, 75, 50);
+
+		contextTwo.fillStyle = "red";
+		contextTwo.fillRect(150, 20, 75, 50);
+
+		contextTwo.globalCompositeOperation = "source-over";
+		contextTwo.fillStyle = "blue";
+		contextTwo.fillRect(180, 50, 75, 50);
+
+    
+  }
+  drawScreenTwo()
+
+
+  // **************drawScreenThree************
+
+  var theCanvasThree = document.getElementById("canvasThree");
+  var contextThree = theCanvasThree.getContext("2d");
+
+
+  function drawScreenThree(){
+  	contextThree.fillStyle = "yellow";
+	  contextThree.fillRect(5, 5, 150, 150);
+
+	  contextThree.beginPath();
+	  contextThree.strokeStyle = "green";
+	  contextThree.lineWidth = 5;
+	  contextThree.arc(100, 100, 20, (Math.PI*1.5), (Math.PI*0.5), false);
+	  // contextThree.arc(100, 100, 20, (Math.PI * 1.5/0/0.5/0.1), (Math.PI*1.5/0/0.5/0.1), false); //
+	  contextThree.stroke();
+	  contextThree.closePath();
+
+  }
+
+  drawScreenThree()
+
+
+</script>
+
+
+
+</body>
+</html>
