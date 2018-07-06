@@ -1,0 +1,10 @@
+in the rot folder run the command:
+`sass --watch .`
+this compiles the css inside the interpreter folder.
+
+
+To get the css to compile inside the compiled folder run the command:
+`sass --watch sass-interpreter-folder:sass-compiled-folder`
+
+run ctr+c stop
+
