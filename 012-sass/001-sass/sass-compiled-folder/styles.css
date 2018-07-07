@@ -1,0 +1,30 @@
+body {
+  background: #d2e1dd;
+  color: #333;
+  font-family: "Andale Mono", monospace;
+  font-size: 14px; }
+
+article {
+  background: white;
+  width: 760px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box; }
+
+header {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  line-height: 10px;
+  text-align: center;
+  background: #036;
+  color: white;
+  margin: auto; }
+  header h1 {
+    font-size: 16px;
+    padding-top: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

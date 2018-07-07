@@ -8,3 +8,8 @@ To get the css to compile inside the compiled folder run the command:
 
 run ctr+c stop
 
+
+************************************************************
+  /*comments: these shows up on the browser. */
+  //comments : these comments don't show up on the browser. Only for internal use. 
+
