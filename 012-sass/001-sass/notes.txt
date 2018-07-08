@@ -1,4 +1,4 @@
-in the rot folder run the command:
+in the root folder run the command:
 `sass --watch .`
 this compiles the css inside the interpreter folder.
 
